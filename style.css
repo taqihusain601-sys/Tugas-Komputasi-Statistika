@@ -1,0 +1,147 @@
+/* style.css ??? Tema Coklat Muda, Font Times New Roman */
+
+/* WARNA DASAR */
+:root{
+  --bg: #f3e2c7;          /* coklat muda / cream */
+  --text: #4a2c1e;        /* coklat gelap */
+  --surface: #e8d5b5;     /* permukaan box */
+  --border: #c7b08a;      /* border lembut */
+  --code-bg: #3b2b1b;     /* background kode R */
+  --code-text: #f7e8d0;   /* teks kode */
+  --radius: 10px;
+}
+
+/* GLOBAL */
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Times New Roman", serif;
+  margin:0;
+  padding:1rem 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Times New Roman", serif;
+  color: var(--text);
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Times New Roman", serif;
+  color: var(--text);
+}
+
+h3{
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  color: var(--text);
+  
+}
+
+h4{
+  font-family: "Times New Roman", serif;
+  color: var(--text);
+  margin-left: 0px;
+}
+
+p{
+  font-family: "Times New Roman", serif;
+  color: var(--text);
+  font-size: 18px;
+}
+
+/* BOX / CARD */
+.card{
+  background: var(--surface);
+  padding:1rem;
+  border-radius: var(--radius);
+  border:1px solid var(--border);
+  margin-bottom:1rem;
+}
+
+/* TABEL */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  font-family:"Times New Roman", serif;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:0.6rem;
+  background: var(--surface);
+}
+
+/* INPUT / FORM */
+input, textarea, select{
+  width:100%;
+  padding:0.5rem;
+  font-family:"Times New Roman", serif;
+  background: var(--surface);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+}
+
+/* KODE R DAN OUTPUT (TIDAK PAKAI TIMES NEW ROMAN) */
+pre, code{
+  background: var(--code-bg) !important;
+  color: var(--code-text) !important;
+  font-family: "Courier New", monospace !important;
+  padding:0.8rem;
+  border-radius: var(--radius);
+  display:block;
+  overflow-x:auto;
+}
+
+/* UNTUK QUARTO / R MARKDOWN */
+div.sourceCode, pre.sourceCode{
+  background: var(--code-bg) !important;
+  color: var(--code-text) !important;
+}
+
+/* OUTPUT CONSOLE */
+pre.r-output{
+  background: var(--code-bg) !important;
+  color: var(--code-text) !important;
+}
+
+/* BLOCKQUOTE */
+blockquote{
+  background: var(--surface);
+  border-left:4px solid var(--border);
+  padding:0.8rem 1rem;
+  font-family: "Times New Roman", serif;
+  color: var(--text);
+  border-radius: var(--radius);
+}
+
+/* LINK */
+a{
+  color: #7a4b27;
+}
+a:hover{
+  color: #5d341a;
+  text-decoration:underline;
+}
+
+
+/* Pastikan header container rata kiri */
+.header {
+  text-align: left !important;
+}
+
+/* Judul, author, dan tanggal rata kiri */
+h1.title {
+  text-align: left !important;
+  font-size: 40px;
+}
+h4.author, h4.date {
+  text-align: left !important;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
