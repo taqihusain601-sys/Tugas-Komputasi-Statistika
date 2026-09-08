@@ -1,6 +1,6 @@
 # Tugas-Komputasi-Statistika
 ---
-## title: "Tugas Komputasi Statistika"
-## author: "Muhammad Taqi Husaini (3338250053)"
-## date: "2026-09-03"
+## Pertemuan: 1"
+## Author: "Muhammad Taqi Husaini (3338250053)"
+## Date: "2026-09-03"
 ---
